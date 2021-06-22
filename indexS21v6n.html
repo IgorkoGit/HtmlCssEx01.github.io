@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<title>login form ru</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {line-height: 1;}
+		ol, ul {list-style: none;}
+		blockquote, q {quotes: none;}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+	
+		*, :before, :after {box-sizing:border-box;}
+		html, body {height:100%;}
+		body {
+			background:#143be2;
+			background: linear-gradient(to top, #21626a, #02020c);
+			font-family:Arial, Helvetica, sans-serif;
+			}
+		input, button{font:inherit;}
+		.wrapper{padding:80px;}
+		.container {
+			width:400px;
+			margin:0 auto;
+			padding:20px;
+			border:2px solid #fef102;
+			border-radius:10px;
+			background:#bfd5f4;
+			}
+		h1{font-size:30px;font-weight:bold;text-align:center;padding:20px}
+		p,input[type=text],input[type=password], label {font-size:21px;padding:8px 3px;}
+		p {text-align:center;}
+		a {color: #091d66;text-decoration: none;}
+		a:visited {color: #9e079e;}
+		a:hover {color:#b11010;text-decoration:underline;}
+		input[type=text], input[type=password]{
+			width:100%;
+			padding:12px;
+			margin:5px 0 22px 0;
+			display:inline-block;
+			border:none;
+			background:#f1f1f1;
+			}
+		button{
+			width:150px;
+			height:33px;
+			border:1px solid #28334a;
+			color:#ffffff;
+			background:#012c19;
+			}
+		#registerbtn{font-size:25px;text-align:center;padding-bottom:10px;margin:0 auto;}
+		input,button{border-radius:3px;}
+		button:hover{color:#000000;background:#00bb68;}
+		#username,#password{overflow:visible;}
+		
+		 @media screen and (max-width: 768px) {
+			.wrapper{padding:55px;}
+			h1{font-size:27px;padding:18px}
+			#registerbtn{font-size:23px;padding-bottom:8px;}
+			p {font-size:19px;padding:7px 2px;}
+			.container {width:380px;}
+		 }
+		 @media screen and (max-width: 640px) {
+			.wrapper{padding:35px;}
+			h1{font-size:25px;padding:15px}
+			#registerbtn{font-size:21px;}
+			p {font-size:17px;padding:5px 2px;}
+			.container {width:350px;padding:15px;}
+			button{width:130px;height:28px;}
+		 }
+		 @media screen and (max-width: 480px) {
+			.wrapper{padding:20px;}
+			h1{font-size:25px;padding:12px}
+			#registerbtn{font-size:19px;padding-bottom:7px;}
+			p {font-size:15px;padding:4px 1px;}
+			.container {width:300px;padding:10px;}
+		 }
+		 @media screen and (max-width: 320px) {
+			h1{font-size:21px;padding:12px}
+			#registerbtn{font-size:16px;padding-bottom:7px;}
+			p {font-size:11px;padding:3px 1px;}
+			.container {width:280px;padding:7px;}
+			button{width:120px;height:26px;}
+		 }
+	</style>
+	
+ </head>
+ <body>
+ 
+	<div class="wrapper">
+		<form id="form1" action="index.php" method="post">
+			<div class="container">
+				<h1> Приветствуем </h1>
+				
+				<label for="username"><b>Username</b></label>
+				<input id="username" type="text" placeholder="введите ваш логин" pattern="[A-Za-z0-9]{3,18}"
+				title = "Логин должен иметь от трех до восемнадцати латинских символов и цифр."
+				value="Логин" required/>
+				
+				<label for="password"><b>Password</b></label>
+				<input id="password" type="password" placeholder="введите ваш пароль" pattern="[A-Za-z0-9]{6,12}"
+				title = "Пароль не может быть короче шести и длинее двенадцяти латинских символов и цифр"
+				value="Пароль" required/>
+				
+				<div id="registerbtn">
+					<button type="submit">войти</button>
+				</div>
+		
+				<p><a href="#">Забыли пароль?</a> &nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+			</div>
+		</form>
+	</div>
+	
+ </body>
+</html>
